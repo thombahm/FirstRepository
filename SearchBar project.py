@@ -9,10 +9,13 @@ def words():
     dataBase = ['Good Morning', 'All of the Lights', 'Chain Smoker', 'gud Morneng', 'I like to eat beans']
     userSearch  = "hood mOrning".lower()
     
+    ''' any code that needs to filter through each character that the user has typed in'''
     for char in userSearch:
         word = word.join(char)
         wordLength+=1
         print(word)
+        
+        ''' used to figure out how many words in the users text'''
         if char == ' ':
             userWords.append('Guac')
             wordCount +=1
